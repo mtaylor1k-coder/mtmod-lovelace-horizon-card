@@ -24,10 +24,10 @@ import { HorizonErrorContent } from '../HorizonErrorContent'
 import { HorizonCardContent } from './HorizonCardContent'
 import { HORIZON_CARD_EDITOR_TAG } from './HorizonCardEditor'
 
-@customElement('horizon-card')
+@customElement('mtmod-horizon-card')
 export class HorizonCard extends LitElement {
-  static readonly cardType = 'horizon-card'
-  static readonly cardName = 'Horizon Card'
+  static readonly cardType = 'mtmod-horizon-card'
+  static readonly cardName = 'MTMod Horizon Card'
   static readonly cardDescription = 'Custom card that display a graph to track the sun position and related events'
   static readonly cardDocumentationURL = 'https://github.com/rejuvenate/lovelace-horizon-card#configuration'
 
