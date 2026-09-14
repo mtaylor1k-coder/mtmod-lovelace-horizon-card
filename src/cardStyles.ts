@@ -53,7 +53,7 @@ export default css`
   }
 
   .horizon-card {
-    padding: 0.5em;
+    padding: 0.25em;
     font-family: var(--primary-font-family);
   }
 
@@ -66,8 +66,8 @@ export default css`
   .horizon-card-field-row {
     display: flex;
     justify-content: space-around;
-    margin-top: 1em;
-    margin-bottom: -0.3em;
+    margin-top: .25em;
+    margin-bottom: -0.15em;
   }
 
   .horizon-card-text-container {
@@ -82,8 +82,8 @@ export default css`
 
   .horizon-card-field-value {
     color: var(--hc-field-value-color, var(--hc-primary));
-    font-size: 1.2em;
-    line-height: 1.1em;
+    font-size: 1.1em;
+    line-height: 1.0em;
     text-align: center;
   }
 
@@ -103,12 +103,12 @@ export default css`
 
   .horizon-card-sun-value:before {
     content: "☉";
-    padding-right: 0.5em;
+    padding-right: 0.3em;
   }
 
   .horizon-card-moon-value:before {
     content: "☽";
-    padding-right: 0.5em;
+    padding-right: 0.3em;
   }
 
   .horizon-card-header {
@@ -123,11 +123,11 @@ export default css`
   }
 
   .horizon-card-footer {
-    margin-bottom: 1em;
+    margin-bottom: .25em;
   }
 
   .horizon-card-graph {
-    margin: 1em 0;
+    margin: 25em 0;
   }
 
   /* The SVG scales to the container width; its height follows the viewBox aspect ratio, so the
