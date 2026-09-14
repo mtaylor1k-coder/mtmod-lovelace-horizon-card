@@ -11,7 +11,7 @@ import { I18N } from '../../utils/I18N'
 // The custom element tag for the visual editor. HorizonCard.getConfigElement() creates this tag;
 // importing the const from the card also anchors this module in the bundle so its @customElement
 // side effect is never tree-shaken.
-export const HORIZON_CARD_EDITOR_TAG = 'horizon-card-editor'
+export const HORIZON_CARD_EDITOR_TAG = 'mtmod-horizon-card-editor'
 
 // Every field toggle the editor exposes, with its effective default. The four per-body azimuth/
 // elevation keys are shown instead of the shared `azimuth`/`elevation` shorthand so each toggle maps
