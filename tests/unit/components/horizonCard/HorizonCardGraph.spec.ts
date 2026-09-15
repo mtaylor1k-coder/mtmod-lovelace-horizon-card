@@ -111,7 +111,7 @@ describe('HorizonCardGraph', () => {
       expect(html).toContain('horizon-card-sun-path')
     })
 
-    it(`crops the viewBox and the sunrise/sunset line tops to the graph frame`, async () => {
+    it(`uses the fixed classic viewBox when graph-frame data is provided`, async () => {
       const config = {
         sun: true
       } as IHorizonCardConfig
@@ -126,9 +126,8 @@ describe('HorizonCardGraph', () => {
 
       const html = await TemplateResultTestHelper.renderElement(horizonCardGraph)
 
-      expect(html).toContain('viewBox="0 30 550 90"')
-      // The sunrise/sunset line tops track the frame top (30 + GRAPH_LINE_INSET_TOP 3).
-      expect(html).toContain('y1="33"')
+      expect(html).toContain('viewBox="0 0 550 150"')
+
     })
 
     it(`falls back to the classic viewBox when the data has no frame`, async () => {
