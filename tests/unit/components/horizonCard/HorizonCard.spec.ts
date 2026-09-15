@@ -902,11 +902,11 @@ describe('HorizonCard', () => {
 
       consoleErrorSpy.mockClear()
       horizonCard['debug']('test1', 1)
-      expect(consoleErrorSpy).toHaveBeenCalledWith('custom:horizon-card :: test1')
+      expect(consoleErrorSpy).toHaveBeenCalledWith('custom:mtmod-horizon-card :: test1')
 
       consoleErrorSpy.mockClear()
       horizonCard['debug'](() => 'test2', 2)
-      expect(consoleErrorSpy).toHaveBeenCalledWith('custom:horizon-card :: test2')
+      expect(consoleErrorSpy).toHaveBeenCalledWith('custom:mtmod-horizon-card :: test2')
 
       consoleErrorSpy.mockClear()
       horizonCard['debug']('test3', 3)
