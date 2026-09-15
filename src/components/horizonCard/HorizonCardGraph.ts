@@ -40,7 +40,7 @@ export class HorizonCardGraph {
     // touch the edges. The SVG scales to the container width, so a shorter frame = a shorter card.
     return html`
       <div class="horizon-card-graph">
-        <svg viewBox="0 0 550 150" xmlns="http://www.w3.org/2000/svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 150">
           ${this.renderSvg()}
         </svg>
       </div>
