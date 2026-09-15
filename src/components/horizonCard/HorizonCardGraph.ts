@@ -38,14 +38,14 @@ export class HorizonCardGraph {
   public render (): TemplateResult {
     // Width stays 550; the frame only crops the height/top offset so the Sun and Moon extremes
     // touch the edges. The SVG scales to the container width, so a shorter frame = a shorter card.
-    const viewBox = `0 ${this.graphFrame.top} ${Constants.GRAPH_WIDTH} ${this.graphFrame.height}`
     return html`
       <div class="horizon-card-graph">
-        <svg viewBox="${viewBox}" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 550 150" xmlns="http://www.w3.org/2000/svg">
           ${this.renderSvg()}
         </svg>
       </div>
     `
+
   }
 
   private renderSvg () {
