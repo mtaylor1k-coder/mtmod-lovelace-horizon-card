@@ -114,20 +114,20 @@ export default css`
   .horizon-card-header {
     display: flex;
     justify-content: space-around;
-    margin-top: 1em;
-    margin-bottom: -0.3em;
+    margin-top: .25em;
+    margin-bottom: -0.2em;
   }
 
   .horizon-card-header .horizon-card-text-container {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .horizon-card-footer {
-    margin-bottom: .25em;
+    margin-bottom: .15em;
   }
 
   .horizon-card-graph {
-    margin: 25em 0;
+    margin: 0.1em 0;
   }
 
   /* The SVG scales to the container width; its height follows the viewBox aspect ratio, so the
